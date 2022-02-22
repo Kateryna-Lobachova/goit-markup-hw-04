@@ -10,6 +10,8 @@
   --modal-button-hover-color: #188ce8;
   --adress-list-color: #ffffff99;
   --border-filter-color: #eeeeee;
+  --background-color: #c4c4c4;
+  --fill-color: #afb1b8;
 }
 
 h1,
@@ -158,7 +160,7 @@ header {
     url("../img/Hero/Img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #c4c4c4;
+  background-color: var(--background-color);
 }
 
 .hero-title {
@@ -202,9 +204,6 @@ header {
   box-sizing: content-box;
 }
 
-.about-list-li {
-}
-
 .about-list-li:not(:last-child) {
   margin-right: 30px;
 }
@@ -215,7 +214,7 @@ header {
   justify-content: center;
   width: 270px;
   height: 120px;
-  background: #f5f4fa;
+  background: var(--background-light-theme);
   border-radius: 4px;
 
   margin-bottom: 30px;
@@ -330,7 +329,7 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: #afb1b8;
+  fill: var(--fill-color);
 }
 
 .soc-list-item:not(:last-child) {
@@ -339,8 +338,8 @@ header {
 
 .soc-list-link:hover,
 .soc-list-link:focus {
-  fill: #ffffff;
-  background-color: #2196f3;
+  fill: var(--accent-font-color);
+  background-color: var(--accent-color);
 }
 
 /*=====CUSTOMERS=====*/
@@ -368,16 +367,16 @@ header {
 
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--fill-color);
   box-sizing: border-box;
   border-radius: 4px;
 
-  fill: #afb1b8;
+  fill: var(--fill-color);
 }
 
 .customers-link:hover,
 .customers-link:focus {
-  fill: #2196f3;
+  fill: var(--accent-color);
 }
 
 /*=====FOOTER=====*/
@@ -397,7 +396,7 @@ footer {
 }
 
 .footer-list {
-  min-width: 206px;
+  width: 206px;
 }
 
 .footer-adress-list {
@@ -461,7 +460,7 @@ footer {
 
 .footer-soc-list-link:hover,
 .footer-soc-list-link:focus {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 .footer-soc-list-item:not(:last-child) {
