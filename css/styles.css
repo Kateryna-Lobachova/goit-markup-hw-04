@@ -387,11 +387,19 @@ footer {
   padding-bottom: 60px;
   background-color: var(--background-dark-theme);
 }
-
+.footer-adress-list {
+  min-width: 230px;
+  margin-right: 70px;
+}
 .footer-div {
   display: flex;
   align-items: baseline;
 }
+
+.footer-list {
+  min-width: 206px;
+}
+
 .footer-adress-list {
   margin-right: 70px;
 }
